@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <style>
+        .button {
+            display: inline-block;
+            background-color: #ee432e;
+            background-image: linear-gradient(to bottom, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+            /* background-image: linear-gradient(to top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%); */
+            border: 1px solid #951100;
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+            padding: 5px 12px 5px 12px;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+        }
+        /* a:hover{
+            -moz-transform: scale(-1);
+            transform: scale(-1);
+        } */
+        a:active{
+            transform: -moz-translate(1px,2px);
+            transform:translate(1px,2px);
+            transform: skew(30deg,0);
+        }
+
+        .navBtn{
+            display: inline-block;
+            color: red;
+            transition-property: color;
+            transition-duration: 1.5s;
+        }
+        .navBtn:hover{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <br/>
+    <div>
+        <a href="#" class="button">A Link Button</a>
+        <button href="#" class="navBtn">Second Link Button</button>
+    </div>
+</body>
+
+</html>
